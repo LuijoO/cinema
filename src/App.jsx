@@ -8,17 +8,24 @@ import {
 } from "react-router-dom";
 import { MovieDetails } from "./pages/MovieDetails";
 import { LandingPage } from "./pages/LandingPage";
+import { Search } from "./components/Search";
 
- 
 export function App() {
   return ( 
     <Router>
-      <header className={style.contenedor}>
+      <nav className={style.main_menu}>
+        <ul>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Terror</a></li>
+          <li><a href="#">Comedia</a></li>
+        </ul>
+        <header className={style.contenedor}>
         <Link to="/">
-          <h1>MOVIES</h1>
+          <h1>MOVIELAND</h1>
         </Link>
-        <h4>Descripcion breve de todo.</h4>
       </header>
+        <Search />
+      </nav>
       <main>
       <Switch>
         <Route exact path='/movies/:movieId'>

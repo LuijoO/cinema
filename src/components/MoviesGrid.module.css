@@ -1,5 +1,5 @@
 .moviesGrid {
-  margin: 0 10%;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
   gap: 40px;

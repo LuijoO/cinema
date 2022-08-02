@@ -16,6 +16,7 @@
 header {
   justify-content: center;
   text-align: center;
+  margin-right: 110px;
 }
 
 @media (max-width: 560px) {

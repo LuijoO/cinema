@@ -1,7 +1,37 @@
-.contenedor {
+nav {
+  background-color: #10454F;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_menu ul{
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  padding: 0;
+}
+
+.main_menu ul li{
+  list-style: none;
+  justify-content: space-around;
+  margin: 15px 20px;
+  padding: 5px 10px;
+  border-radius: 9px;
+  background-color: #A3AB78;
+}
+
+.main_menu ul li a {
+  color: #10454F;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main_menu ul li:hover {
+  background-color: #BDE038;
 }
